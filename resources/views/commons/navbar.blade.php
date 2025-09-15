@@ -1,5 +1,5 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Compras</a>
+  <a class="navbar-brand" href="#">Ejercicios</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
   </button>
@@ -16,20 +16,25 @@
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownShoppings" role="button" 
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Compras
+                  Colecciones
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownShoppings">
-                  <a class="dropdown-item" href="#">Listado</a>
+                  <a class="dropdown-item" href="{{ route('collectionCreate') }}">Crea colección</a>
+                  <a class="dropdown-item" href="{{ route('collectionPeliculas') }}">Películas</a>
+                  <a class="dropdown-item" href="{{ route('collectionPeliculasGenero') }}">Películas con género</a>
               </div>
           </li>
 
           
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Productos
+                  Métodos
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownProducts">
-                  <a class="dropdown-item" href="#">Listado</a>
+                  <a class="dropdown-item" href="{{ route('collectionDivide') }}">Dividir colección</a>  
+                  <a class="dropdown-item" href="{{ route('collectionJson') }}">Convertir a JSON</a>  
+                  <a class="dropdown-item" href="{{ route('collectionPrice') }}">Price (precio euro)</a> 
+                  <a class="dropdown-item" href="{{ route('collectionReject') }}">Reject (filtrado)</a> 
               </div>
           </li>
 

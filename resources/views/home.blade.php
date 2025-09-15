@@ -4,5 +4,5 @@
 
 @section('content-area')
     <br><br>
-    <h1>Colecciones</h1>
+    <h1>Ejercicios</h1>
 @endsection
